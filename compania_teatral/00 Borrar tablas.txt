@@ -1,0 +1,18 @@
+--Borrar tablas de compañia teatral
+CONNECT compania_teatral/compania_teatral
+
+DROP TABLE funcion;
+
+DROP TABLE afinidad;
+
+DROP TABLE papel;
+
+DROP TABLE obra;
+
+DROP TABLE atrezo;
+
+DROP TABLE autor;
+
+DROP TABLE artista;
+
+DROP TABLE teatro;

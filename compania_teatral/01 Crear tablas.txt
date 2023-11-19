@@ -1,0 +1,97 @@
+CONNECT compania_teatral/compania_teatral
+CREATE TABLE teatro (
+	id_teatro VARCHAR(10),
+	nombre_teatro VARCHAR(40) NOT NULL,
+	direccion VARCHAR(50) NOT NULL,
+	localidad VARCHAR (50) NOT NULL,
+	provincia VARCHAR (30) NOT NULL,
+	aforo NUMBER(4),
+	categoria VARCHAR(50),
+	telefono VARCHAR(10) NOT NULL,
+	rfc_teatro VARCHAR(15) NOT NULL,
+	CONSTRAINT pk_teatro_id_teatro PRIMARY KEY (id_teatro),
+	CONSTRAINT ck_aforo CHECK(aforo >= 100),
+	CONSTRAINT uk_teatro_rfc_teatro UNIQUE (rfc_teatro)
+);
+
+
+CREATE TABLE artista (
+       id_artista  VARCHAR(10),
+       nombre_artista  VARCHAR(40) NOT NULL,
+       paterno_artista VARCHAR(40) NOT NULL,
+       materno_artista VARCHAR(40),
+       nombre_artistico VARCHAR(40) NOT NULL,
+       nacimiento_artista DATE,
+       cache NUMBER(8,2) NOT NULL,
+       descripcion VARCHAR(70),
+       CONSTRAINT pk_artista_id_artista PRIMARY KEY (id_artista),
+       CONSTRAINT ck_cache CHECK(cache >= 100.00),
+       CONSTRAINT uk_artista_nombre_artistico UNIQUE (nombre_artistico)	
+);
+
+CREATE TABLE autor (
+	id_autor VARCHAR(10),
+	nombre_autor VARCHAR(40) NOT NULL,
+	paterno_autor VARCHAR(40) NOT NULL,
+	materno_autor VARCHAR(40),
+	nombre_artistico_autor VARCHAR(40) NOT NULL,
+	nacimiento_autor DATE,
+	precio_libreto NUMBER(8,2) NOT NULL,
+	precio_representacion NUMBER (8,2) NOT NULL,
+	CONSTRAINT pk_autor_id_autor PRIMARY KEY (id_autor),
+	CONSTRAINT ck_precio_libreto CHECK(precio_libreto >= 100.00),
+	CONSTRAINT ck_precio_representacion CHECK(precio_representacion >= 100.00),
+	CONSTRAINT uk_autor_nombre_artistico UNIQUE (nombre_artistico_autor)	
+);
+
+CREATE TABLE atrezo (
+	id_atrezo VARCHAR(10),
+	nombre_atrezo VARCHAR(40) NOT NULL,
+	cantidad NUMBER(6) NOT NULL,
+	CONSTRAINT pk_atrezo_id_atrezo PRIMARY KEY (id_atrezo),
+	CONSTRAINT ck_cantidad CHECK(cantidad >= 1)
+);
+
+CREATE TABLE obra (
+	id_obra VARCHAR(10),
+	titulo VARCHAR(40),
+	anyo NUMBER(4),
+	id_autor VARCHAR(10),
+	CONSTRAINT pk_obra_id_obra PRIMARY KEY (id_obra),
+	CONSTRAINT ck_anyo CHECK(anyo >= 1500),
+	CONSTRAINT uk_obra_titulo UNIQUE(titulo),
+	CONSTRAINT fk_id_autor FOREIGN KEY (id_autor) REFERENCES autor(id_autor)
+);
+
+CREATE TABLE papel (
+	id_papel VARCHAR (10),
+	nombre_papel VARCHAR(40) NOT NULL,
+	duracion NUMBER(3),
+	id_atrezo VARCHAR(10),
+	id_obra VARCHAR(10),
+	CONSTRAINT pk_papel_id_papel PRIMARY KEY (id_papel),
+	CONSTRAINT fk_id_atrezo FOREIGN KEY (id_atrezo) REFERENCES atrezo(id_atrezo),
+	CONSTRAINT fk_id_obra FOREIGN KEY (id_obra) REFERENCES obra(id_obra),
+	CONSTRAINT ck_duracion CHECK(duracion BETWEEN 10 AND 600)	
+);
+
+CREATE TABLE afinidad (
+	id_afinidad VARCHAR(10),
+	no_veces_interpretado NUMBER(4),
+	id_papel VARCHAR(10),
+	id_artista VARCHAR(10),
+	CONSTRAINT pk_afinidad_id_afinidad PRIMARY KEY (id_afinidad),
+	CONSTRAINT fk_id_papel FOREIGN KEY (id_papel) REFERENCES papel(id_papel),
+	CONSTRAINT fk_id_artista FOREIGN KEY (id_artista) REFERENCES artista(id_artista),
+	CONSTRAINT ck_no_veces_interpretado CHECK(no_veces_interpretado >= 0)
+);
+
+CREATE TABLE funcion (
+	id_funcion VARCHAR(10),
+	fecha_funcion DATE,
+	id_teatro VARCHAR(10) NOT NULL,
+	id_obra VARCHAR(10),
+	CONSTRAINT pk_funcion_id_funcion PRIMARY KEY (id_funcion, id_teatro, id_obra),
+	CONSTRAINT fk_id_teatro FOREIGN KEY (id_teatro) REFERENCES teatro(id_teatro),
+	CONSTRAINT fk_funcion_id_obra FOREIGN KEY (id_obra) REFERENCES obra(id_obra)
+);

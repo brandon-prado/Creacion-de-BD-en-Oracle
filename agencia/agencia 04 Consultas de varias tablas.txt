@@ -1,0 +1,97 @@
+--Consulta de varias tablas que involucra las tablas de vehiculo y garage, en la cual nos muestra el vehiculo y la direccion en la que se encuentra
+
+SELECT vehiculo.id_vehiculo, vehiculo.marca_vehiculo, vehiculo.modelo_vehiculo, vehiculo.modelo_anyo, vehiculo.tipo_vehiculo, garage.id_garage, garage.direccion_garage
+FROM vehiculo, garage
+WHERE vehiculo.id_garage = garage.id_garage;
+
+--Consulta de varias tablas que involucra las tablas de vehiculo y garage, en la cual nos muestra el vehiculo, el nombre de garage y su capacidad
+
+SELECT vehiculo.matricula_vehiculo, vehiculo.marca_vehiculo, vehiculo.tipo_vehiculo, garage.id_garage, garage.nombre_garage, garage.capacidad_garage
+FROM vehiculo, garage
+WHERE vehiculo.id_garage = garage.id_garage;
+
+--Consulta de varias tablas que nos muestra num de serie de vehicula y el id de agarage en el que se encuentra con su direccion
+
+SELECT vehiculo.no_serie_vehiculo, vehiculo.matricula_vehiculo, garage.id_garage, garage.direccion_garage
+FROM vehiculo, garage
+WHERE vehiculo.id_garage = garage.id_garage;
+
+--Consulta con uso de alias para acortar texto en el cual se muestra la espeficiacion tecnica (digito porque no se añadio un documento)
+
+SELECT et.id_especificacion, et.hoja_especificacion, v.id_vehiculo, v.no_serie_vehiculo
+FROM especificacion_tecnica et, vehiculo v
+WHERE et.id_vehiculo = v.id_vehiculo;
+
+--Consulta con uso de alias para acortar texto en el cual se muestra la hoja de especificacion, matricula y foto del vehiculo (foto=digito porque no se agrego imagen)
+
+SELECT et.hoja_especificacion, v.matricula_vehiculo, v.foto_vehiculo
+FROM especificacion_tecnica et, vehiculo v
+WHERE et.id_vehiculo = v.id_vehiculo;
+
+--Consulta con uso de alias que muestra el id de reservacion, estado de la reservacion y la matricula del vehiculo alquilado
+
+SELECT r.id_reservacion, r.tiene_reservacion, v.matricula_vehiculo
+FROM reservacion r, vehiculo v
+WHERE r.id_vehiculo = v.id_vehiculo;
+
+--Consulta con uso de alias para mostrar en que agencia se realizo la reservacion
+
+SELECT r.id_reservacion, r.tiene_reservacion, a.nombre_agencia, a.direccion_agencia
+FROM reservacion r, agencia a
+WHERE r.id_agencia = a.id_agencia;
+
+--Consulta con uso de alias para mostrar el id de la reservacion y quien es hizo alquiler para localizarlo por medio de su telefono
+
+SELECT r.id_reservacion, c.nombre_cliente, c.telefono_cliente
+FROM reservacion r, cliente c
+WHERE r.id_cliente = c.id_cliente;
+
+--Consulta con uso de alias para mostrar que clientes cancelaron la reservacion
+
+SELECT r.id_reservacion, r.cancelacion_reservacion, c.id_cliente
+FROM reservacion r, cliente c
+WHERE r.id_cliente = c.id_cliente;
+
+--Consulta con uso de alias para mostar las fechas de reservacion programadas y la entrega en forma ascendente
+
+SELECT r.id_reservacion, r.fecha_prog_real_inicio, r.fecha_prog_real_fin, c.nombre_cliente, c.paterno_cliente
+FROM reservacion r, cliente c
+WHERE r.id_cliente = c.id_cliente
+ORDER BY r.fecha_prog_real_inicio, r.fecha_prog_real_fin;
+
+--Consulta con uso de alias donde se muestran aquellas reservaciones que se realizaron en la ciudad de Saltillo
+
+SELECT r.id_reservacion, r.fecha_inicial_reserv, a.nombre_agencia, a.ciudad_agencia 
+FROM reservacion r, agencia a
+WHERE r.id_agencia = a.id_agencia
+AND LOWER (a.ciudad_agencia) = 'saltillo';
+
+--Consultan con uso de alias donde se muestran las sucursales de Coahuila
+
+SELECT r.id_reservacion, r.tiene_reservacion, a.nombre_agencia, a.estado_agencia
+FROM reservacion r, agencia a
+WHERE r.id_agencia = a.id_agencia
+AND LOWER (a.estado_agencia) = 'coahuila';
+
+--Consulta con uso de alias donde muestra la fecha asignada y la fecha real de entrega del vehiculo por parte del cliente
+
+SELECT r.id_reservacion, r.fecha_fin_reservacion, r.fecha_prog_real_fin, c.id_cliente
+FROM reservacion r, cliente c
+WHERE r.id_cliente = c.id_cliente
+ORDER BY r.fecha_fin_reservacion, r.fecha_prog_real_fin;
+
+--Consulta sin uso de alias donde se muestra de forma descente los estados en la que se hizo la recerva
+
+SELECT reservacion.id_reservacion, reservacion.tiene_reservacion, agencia.nombre_agencia, agencia.estado_agencia, agencia.telefono_agencia
+FROM reservacion, agencia
+WHERE reservacion.id_agencia = agencia.id_agencia
+ORDER BY agencia.estado_agencia;
+
+--Consulta con uso de alias que muestra de forma ascendente el precio de alquiler de se cada recervacion
+
+SELECT r.id_reservacion, r.tiene_reservacion, v.matricula_vehiculo, v.modelo_anyo, v.precio_alquiler
+FROM reservacion r, vehiculo v
+WHERE r.id_vehiculo = v.id_vehiculo
+ORDER BY v.precio_alquiler;
+
+

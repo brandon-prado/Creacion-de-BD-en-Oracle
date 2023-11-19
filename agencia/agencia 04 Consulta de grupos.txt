@@ -1,0 +1,86 @@
+--Consulta de varios grupos de la tabla vehiculo donde se saca el promedio, el maximo y minimo precio, precio de alquiler y la suma de todos los precios, siempre cuando su matricula empiece "HJ"
+
+SELECT AVG(precio_alquiler), MAX(precio_alquiler),
+       MIN(precio_alquiler), SUM(precio_alquiler)
+FROM vehiculo
+WHERE matricula_vehiculo LIKE 'HJ%';
+
+--Consulta de grupo simple que nos muestra la precio del alquiler promedio de los diferentes vehiculos
+
+SELECT AVG(precio_alquiler)
+FROM vehiculo;
+
+--Consulta de grupo simple que nos muestra el precio promedio de los diferentes vehiculos toyota
+
+SELECT AVG(precio_alquiler)
+FROM vehiculo
+WHERE marca_vehiculo = 'toyota';
+
+--Consulta de grupo simple que nos muestra el promedio de alquiler y asi mismo precio minimo al que se puede alquilar un vehiculo
+--Asi mismo se utiliza el alias para ocultar la formula
+
+SELECT AVG(precio_alquiler)"Promedio", MIN(precio_alquiler)"Minimo"
+FROM vehiculo;
+
+--Consulta de grupo simple que nos muestra la cantidad de vehiculos de determinada marca y ademas el uso de alias
+
+SELECT COUNT(*) "Cantidad de vehiculos Lexus"
+FROM vehiculo
+WHERE marca_vehiculo = 'lexus';
+
+--Consulta de grupo simple que nos muestra la cantidad maxima de cupo de todos los garage
+
+SELECT MAX(capacidad_garage)"Capacidad maxima permitida", SUM(capacidad_garage) "Capacidad total"
+FROM garage;
+
+--Consulta de grupo que nos muestra la capacidad minima de la tabla garage siempre cuando su nombre empiece con D
+
+SELECT MIN(capacidad_garage) "Capacidad minima de vehiculos"
+FROM garage
+WHERE nombre_garage LIKE 'D%';
+
+--Consulta de grupo que nos muestra la fecha que se hizo la reservacion y la fecha en la que el cliente se llevo el vehiculo
+
+SELECT MIN(fecha_inicial_reserv) "FECHA INICIAL", MIN(fecha_prog_real_inicio) "FECHA INICIAL REAL"
+FROM reservacion;
+
+--Consulta de grupo que nos muestra la fecha asignada por la agencia hipotetica
+
+SELECT MIN(fecha_inicial_reserv) "FECHA INICIAL", MAX(fecha_fin_reservacion) "FECHA FINAL"
+FROM reservacion;
+
+--Consulta de grupo que nos muestra la fecha mas antigua y la mas reciente de las recervaciones
+
+SELECT MIN(fecha_inicial_reserv) "FECHA INICIAL", MIN(fecha_prog_real_inicio) "FECHA INICIAL REAL", 
+MAX(fecha_fin_reservacion) "FECHA FINAL", MAX(fecha_prog_real_fin) "FECHA FINAL REAL"
+FROM reservacion;
+
+--Consulta de grupo que realiza promedio de su precio de alquiler de acuerdo a las marcas de los vehiculos
+
+SELECT marca_vehiculo, AVG(precio_alquiler) "Promedio de alquiler"
+FROM vehiculo
+GROUP BY marca_vehiculo;
+
+--Consulta de grupo que realiza promedio cupo de espacio de acuerdo a la garage
+
+SELECT nombre_garage, AVG(capacidad_garage) "Promedio de cupo"
+FROM garage
+GROUP BY nombre_garage;
+
+--Consulta de grupo que realiza promedio de precio de alquiler mostrando su tipo y marca del vehiculo
+
+SELECT tipo_vehiculo, marca_vehiculo, AVG(precio_alquiler)"Promedio de alquiler"
+FROM vehiculo
+GROUP BY tipo_vehiculo, marca_vehiculo;
+
+--Consulta de grupo que muestra el maximo de cupo y agrupando el nombre, id y la direccion del garage
+
+SELECT nombre_garage, id_garage, direccion_garage, MAX(capacidad_garage) "Capacidad maxima"
+FROM garage
+GROUP BY nombre_garage, id_garage, direccion_garage;
+
+--Consulta de grupo que muestra el minimo de cupo y agrupando el nombre, id y la direccion del garage
+
+SELECT nombre_garage, id_garage, direccion_garage, MIN(capacidad_garage) "Capacidad minima"
+FROM garage
+GROUP BY nombre_garage, id_garage, direccion_garage;

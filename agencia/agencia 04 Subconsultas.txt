@@ -1,0 +1,131 @@
+--Subconsulta de la tabla vehiculo la cual nos muestra todos los vehiculos con el precio de alquiler sea mayor al vehiculo v001
+
+SELECT matricula_vehiculo, marca_vehiculo, modelo_vehiculo, modelo_anyo, tipo_vehiculo
+FROM vehiculo
+WHERE precio_alquiler > (SELECT precio_alquiler
+			 FROM vehiculo
+			 WHERE id_vehiculo='v001');
+
+--Subconsulta de la tabla vehiculo que nos muestra por medio un filtro aquellos vehiculos que son camioneta y su precio es mayor al vehiculo
+
+SELECT matricula_vehiculo, marca_vehiculo, tipo_vehiculo
+FROM vehiculo
+WHERE tipo_vehiculo = (SELECT tipo_vehiculo
+		     FROM vehiculo
+	             WHERE id_vehiculo = 'v001')
+AND precio_alquiler > 
+		     (SELECT precio_alquiler
+	             FROM vehiculo
+	             WHERE id_vehiculo = 'v015');
+
+--Subconsulta de la tabla vehiculo que nos muestra aquellos que tienen un precio minimo
+
+SELECT matricula_vehiculo, marca_vehiculo, modelo_vehiculo, modelo_anyo, tipo_vehiculo, precio_alquiler
+FROM vehiculo
+WHERE precio_alquiler = (SELECT MIN(precio_alquiler)
+				  FROM vehiculo);
+
+--Subconsulta de la tabla vehiculo que nos muestra aquellos que tienen un precio maximo
+
+SELECT matricula_vehiculo, marca_vehiculo, modelo_vehiculo, modelo_anyo, tipo_vehiculo, precio_alquiler
+FROM vehiculo
+WHERE precio_alquiler = (SELECT MAX(precio_alquiler)
+				  FROM vehiculo);
+
+--Subconsulta de la tabla agencia que nos muestra los numeros de telefono que pertenezcan a una determinada provincia (Coahuila)
+
+SELECT nombre_agencia, telefono_agencia, estado_agencia
+FROM agencia
+WHERE telefono_agencia LIKE '844%'
+AND estado_agencia = (SELECT estado_agencia
+			 FROM agencia
+			 WHERE id_agencia = 'a001');
+
+--Subconsulta de la tabla agencia que nos muestra las sucursales de Saltillo
+SELECT nombre_agencia, telefono_agencia, correo_agencia
+FROM agencia
+WHERE ciudad_agencia = (SELECT ciudad_agencia
+			   FROM agencia
+			   WHERE id_agencia = 'a001');
+
+--Subconsulta de la tabla agencia que nos muestra las sucursales de Nuevo Leon y que su telefono termine en 2
+
+SELECT nombre_agencia, telefono_agencia, correo_agencia
+FROM agencia
+WHERE estado_agencia = (SELECT estado_agencia
+			   FROM agencia
+			   WHERE id_agencia = 'a009')
+AND telefono_agencia LIKE '_________2%';
+
+--Subconsulta de la tabla agencia que nos muestra el nombre y telefono de las sucursales de Coahuila que empieza con la letra S
+
+SELECT nombre_agencia, telefono_agencia
+FROM agencia
+WHERE estado_agencia = (SELECT estado_agencia
+			   FROM agencia
+			   WHERE id_agencia = 'a001')
+AND ciudad_agencia LIKE 'S%';
+
+--Subconsulta de la tabla garage que nos muestra los garages que son para guardar carros y tienen un capacidad superior a 20 
+
+SELECT nombre_garage, direccion_garage, capacidad_garage, tipo_garage
+FROM garage
+WHERE tipo_garage = (SELECT tipo_garage
+		     FROM garage
+		     WHERE id_garage = 'g003')
+AND capacidad_garage > (SELECT capacidad_garage
+			FROM garage
+			WHERE id_garage = 'g001');
+
+--Subconsulta de la tabla garage que nos muestra todos los garages que guardan trailers
+
+SELECT nombre_garage, direccion_garage, capacidad_garage, tipo_garage
+FROM garage
+WHERE tipo_garage = (SELECT tipo_garage
+		     FROM garage
+		     WHERE id_garage = 'g007');
+
+--Subconsulta de la tabla vehiculo que nos muestra los vehiculos de la marca Toyota con un precio de alquiler superior al vehiculo v005 (88000)
+
+SELECT matricula_vehiculo, marca_vehiculo, modelo_vehiculo, modelo_anyo, precio_alquiler, tipo_vehiculo
+FROM vehiculo
+WHERE marca_vehiculo = (SELECT marca_vehiculo
+			FROM vehiculo
+			WHERE id_vehiculo = 'v005')
+AND precio_alquiler > (SELECT precio_alquiler
+				FROM vehiculo
+				WHERE id_vehiculo = 'v005');
+
+--Subconsulta de la tabla vehiculo que nos muestra los vehiculos de color amarillo
+
+SELECT matricula_vehiculo, marca_vehiculo, modelo_vehiculo, modelo_anyo, color_vehiculo, precio_alquiler 
+FROM vehiculo
+WHERE color_vehiculo = (SELECT color_vehiculo
+			FROM vehiculo
+			WHERE id_vehiculo = 'v003');
+
+--Subconsulta de la tabla vehiculo que nos muestra sus disponibilidad y precio de alquiler de forma ascendente 
+
+SELECT matricula_vehiculo, marca_vehiculo, modelo_vehiculo, modelo_anyo, color_vehiculo, disponibilidad, precio_alquiler
+FROM vehiculo
+WHERE disponibilidad = (SELECT disponibilidad
+			FROM vehiculo
+			WHERE id_vehiculo = 'v001')
+ORDER BY precio_alquiler;
+
+--Subconsulta de la tabla reservacion que nos muestra los que si tienen reservacion y asi mismo se ordena las fechas de ascendente
+
+SELECT id_reservacion, id_vehiculo, id_agencia, id_cliente, tiene_reservacion, cancelacion_reservacion, fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin
+FROM reservacion
+WHERE tiene_reservacion = (SELECT tiene_reservacion
+			   FROM reservacion
+			   WHERE id_reservacion = 'r002')
+ORDER BY fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin;
+
+--Subconsulta de la tabla reservacion que nos muestra aquellas reservaciones con la fecha inicial del dia 12 de enero de 2021
+
+SELECT id_reservacion, id_cliente, fecha_inicial_reserv, fecha_fin_reservacion
+FROM reservacion
+WHERE fecha_inicial_reserv = (SELECT fecha_inicial_reserv
+				   FROM reservacion
+				   WHERE id_reservacion = 'r001');

@@ -1,0 +1,184 @@
+--Tabla agencia
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a001','Centro','Zona Centro 250','Saltillo', 'Coahuila','8441158858','centro@agencia.com','Agencia Centro','CENT534588248','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a002','Norte','Guayulera 1450','Saltillo', 'Coahuila','8441158541','guayulera@agencia.com','Agencia Guayulera','GUAYU32548238','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a003','Express','Gomez Farias 149','San Pedro', 'Nuevo Leon','8441155522','gomezf@agencia.com','Agencia Gomez','GOMEZ56544214','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a004','Teresitas','Teresitas 234','Saltillo', 'Coahuila','8441158541','teresitas@agencia.com','Agencia Teresitas','TERE521478965','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a005','Gomez Palacio','Laguna 125','La Laguna', 'Coahuila','8441100218','gomezpala@agencia.com','Agencia Gomez Palacio','CENT535522248','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a006','Parras','Cipsa 852','Parras', 'Coahuila','8421178541','guayulera@agencia.com','Agencia Parras','PARRAS3548238','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a007','Ramos','Zona Centro 10','Ramos Arizpe', 'Coahuila','8440158858','ramos@agencia.com','Agencia Ramos','RAMOS52588248','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a008','Queretaro','Santiago 20','Queretaro', 'Queretaro','4426208729','queretaro@agencia.com','Agencia Queretaro','QUERETAR48238','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a009','Apodaca','Zona Centro 89','Apodaca', 'Nuevo Leon','8472012582','apodaca@agencia.com','Agencia Apodaca','APODAC5345882','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a010','Chilanga','Reforma 857','Ciudad de Mexico', 'Estados de Mexico','5547022192','chilanga@agencia.com','Agencia Chilanga','CHILA32548238','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a011','Reinosa','Zona Centro 521','Reinosa', 'Tamaulipas','5214569852','reinosa@agencia.com','Agencia Reinosa','REIN534588248','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a012','Torreon','Pedragal 25','Torreon', 'Coahuila','8441155551','torreon@agencia.com','Agencia Torreon','TORREO3254823','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a013','Tequila','Zona Centro 662','Tequila', 'Jalisco','8488158858','tequila@agencia.com','Agencia Tequila','TEQUILA588248','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a014','Agua','Zona baja 245','Mexicali', 'Baja California','4242458697','agua@agencia.com','Agencia Agua','AGUA832548238','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a015','Frontera','Zona Norte 2521','Laredo', 'Tamaulipas','8441258858','frontera@agencia.com','Agencia Frontera','FRONT53458828','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a016','Santa Catarina','Nuevo sol 645','Santa Catarina', 'Nuevo Leon','5425158541','catarina@agencia.com','Agencia Catarina','CATAR32548238','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a017','Polanco','Polanco 23','Polanco', 'Ciudad de Mexico','5542058858','polanco@agencia.com','Agencia Polanco','POLA534588248','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a018','Pueblito','Centro 234','Parras', 'Coahuila','8425448541','pueblito@agencia.com','Agencia Pueblito','PUEB32548238','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a019','Parral','Zona Centro 2','Parral', 'Chihuahua','8441887758','parral@agencia.com','Agencia Parral','PARR534588248','www.agenciautos.com');
+
+INSERT INTO agencia(id_agencia, nombre_agencia, direccion_agencia, ciudad_agencia, estado_agencia, telefono_agencia, correo_agencia, facebook_agencia, rfc_agencia, pagina_web_agencia)
+   	    VALUES ('a020','Premium','Santa Teresa','ST', 'Ciudad de Mexico','5521021520','premium@agencia.com','Agencia Premium','PREMIUM325482','www.agenciautos.com');
+
+
+--Tabla cliente
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c001','Eimy','Cruz','Rodriguez','1001','12345a','Nogalera 123','emiy_cruz@lu.com','EYMI123456789','8444841446','Maria','8444748416','2001');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c002','Braulio','Davila','Saucedo','1002','12345b','Granada 234','Braulio_c@lu.com','BRAULIO123456','8444799446','Mauricio','8444548414','2002');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c003','Brandon','Prado','Castro','1003','12345c','Higuera 434','BPCy_cz@lu.com','Brandon12345','8444846786','Patrcio','8444848414','2003');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c004','Mario','Torres','Salazar','1004','12345d','Saltillo 2000','MOTS_op@lu.com','MARIO123459','8444846799','Fabricio','8444228414','2004');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c005','Juan','Lopez','Morales','1005','12345e','Los pinos 567','Marce-56@lu.com','JUAN123456','8444166799','Diana','8444328414','2005');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c006','Rafael','Lopez','Sanchez','1006','12345f','Brisas Poniente 678','RP-56@lu.com','RAFAEL12349','84443376799','Mariana','8444328411','2006');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c007','Daniel','Lopez','Abundiz','1007','12345g','26 De Marzo 789','DR-56@lu.com','DANIEL12345','84441376799','Lucia','8444328422','2007');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c008','Alan','Lopez','Reyna','1008','12345h','Virreyes Popular 890','AS-56@lu.com','ALAN123456','84441376222','Karen','8444338422','2008');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c009','Hector','Lopez','Gallegos','1009','12345i','Zona Centro 901','HM-56@lu.com','HECTOR123456','84441371222','Diana','8444638422','2009');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c010','Bella','Smith','Vargas','1010','12345j','Centro Metropolitano 134','BE-56@lu.com','BELLA123456','84441371222','Diana','8444638422','2010');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c011','Antonio','Lopez','Cruz','1011','12345k','Centro 134','AN-56@lu.com','Antonio12345','8444117122','Juan','8444638442','2011');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c012','Jesus','Sanchez','Navarro','1012','12345l','Centro 156','JeA-56@lu.com','JESUS12345','8444111122','Juan','8444638408','2012');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c013','Erick','Sanchez','Lopez','1013','12345m','Centenario 156','ELo-56@lu.com','ERICK12345','8444113122','Cecilia','8444638409','2013');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c014','Carlos','Acevedo','Carranza','1014','12345n','Zaragoza 345','CRL-56@lu.com','CARLOS12345','8442113122','Sofia','8444638410','2014');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c015','Paloma','Saucedo','Carranza','1015','12345o','Jardines De Valle 189','PA-56@lu.com','PALOMA1234','8442113122','Diego','8444668410','2015');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c016','Juan','Saucedo','Castillo','1016','12345p','Jardines 189','JM-56@lu.com','JUAN12345','8442113332','Paola','8444667410','2016');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c017','Juan','Alonzo','Zapata','1017','12345q','Jardines Coloniales 189','JA-56@lu.com','JUANA12345','8442213322','Maria','8444661410','2017');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c018','Luis','Abundiz','Romero','1018','12345r','Jardines Coloniales 188','LA-56@lu.com','LUIS12345','8442211322','Alondra','8444881410','2018');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c019','Jose','Cruz','Romero','1019','12345s','Quijote 145','JC-56@lu.com','JOSE12345','8442211322','Andrea','8444882423','2019');
+
+INSERT INTO cliente(id_cliente,nombre_cliente,paterno_cliente,materno_cliente,ine_cliente,folio_ine,domicilio_cliente,correo_cliente,rfc_cliente,telefono_cliente,nombre_aval,telefono_aval,licencia_conducir)
+   	    VALUES ('c020','Axel','Rocha','Presas','1020','12345t','Valencia 234','AR-56@lu.com','Axel12345','8442214562','Jenny','8441234567','2020');
+
+
+--Tabla garage
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g001','El sur','Saltillo2000 605',20,'Camioneta');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g002','El norte','Morelos 790',30,'moto');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g003','Don Pepe','Revolucion 341',25,'Carro');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g004','Sale','Ocampo 307',35,'Camion');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g005','Todo Sale','Rio Bravo 345',15,'Carro');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g006','Nuevo','Revolucion 102',40,'Camioneta');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g007','Sale','Farias 222',10,'Trailer');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g008','Kima','Loma brava 149',40,'Moto');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g009','Don Juan','Loma alta 555',70,'Carro');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g010','Sale todo','Zaragosa 789',15,'Camione');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g011','Todo','Haciendas 666',10,'Trailer');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g012','Jose Sale','Escorial 890',30,'Camioneta');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g013','Llevate','Analco 500',50,'moto');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g014','Don chuy','Mirador 400',40,'convertible');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g015','Sale nuevo','Manantiales 009',33,'Camioneta');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g016','Don','Fidel 123',20,'Moto');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g017','Pepe','Roma 1000',45,'Carro');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g018','Cars','Cañadas 100',44, 'Carro');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g019','Happy Truck','centro 123',25,'Carro');
+
+INSERT INTO garage(id_garage,nombre_garage,direccion_garage,capacidad_garage,tipo_garage)
+   	    VALUES ('g020','Jima','Revolucion 234',100,'Moto');

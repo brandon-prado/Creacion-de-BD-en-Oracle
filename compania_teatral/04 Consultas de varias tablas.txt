@@ -1,0 +1,98 @@
+--Consulta de varias tablas que nos muestra las obra con su respectivo autor
+
+SELECT o.id_obra, o.titulo, o.anyo, au.nombre_artistico_autor, au.nacimiento_autor
+FROM obra o, autor au
+WHERE o.id_autor = au.id_autor;
+
+--Consulta de varias tablas que nos muestra de ascendete anyos con sus respectivos autores
+
+SELECT o.titulo, o.anyo, au.nombre_artistico_autor
+FROM obra o, autor au
+WHERE o.id_autor = au.id_autor
+ORDER BY o.anyo;
+
+--Consulta de varias tablas que nos muestra solo las que el nombre de las obra empizan con A
+
+SELECT o.titulo, o.anyo, au.nombre_autor
+FROM obra o, autor au
+WHERE o.id_autor = au.id_autor
+AND o.titulo LIKE 'A%';
+
+--Consulta de varias tablas que nos muestra que articulo va a usar cada papel de la obra
+
+SELECT p.nombre_papel, p.duracion, at.nombre_atrezo
+FROM papel p, atrezo at
+WHERE p.id_atrezo = at.id_atrezo;
+
+--Consulta de varias tablas que nos muestra que personaje va a usar la escoba
+
+SELECT p.nombre_papel, p.duracion, at.nombre_atrezo
+FROM papel p, atrezo at
+WHERE p.id_atrezo = at.id_atrezo
+AND at.nombre_atrezo = 'escoba';
+
+--Consulta de varias tablas que nos muestra el nombre y que en que obra esta designado
+
+SELECT p.nombre_papel, p.duracion, o.titulo
+FROM papel p, obra o
+WHERE p.id_obra = o.id_obra;
+
+--Consulta de varias tablas que nos muestra el nombre y que en que obra esta designado siempre y cuando empiece el titulo con la letra H
+
+SELECT p.nombre_papel, p.duracion, o.titulo
+FROM papel p, obra o
+WHERE p.id_obra = o.id_obra
+AND o.titulo LIKE 'H%';
+
+--Consulta de varias tablas que nos muestra de forma ascendete los titulos de las obras
+
+SELECT p.nombre_papel, p.duracion, o.titulo
+FROM papel p, obra o
+WHERE p.id_obra = o.id_obra
+ORDER BY o.titulo;
+
+--Consulta de varias tablas que nos muestra las veces que se han interpretado un papel
+
+SELECT af.no_veces_interpretado, p.nombre_papel, p.duracion
+FROM afinidad af, papel p
+WHERE af.id_papel = p.id_papel;
+
+--Consulta de varias tablas que nos muestra de ascendete el cache de cada artista
+
+SELECT af.no_veces_interpretado, a.nombre_artistico, a.cache
+FROM afinidad af, artista a
+WHERE af.id_artista = a.id_artista
+ORDER BY a.cache;
+
+--Consula de varias tablas que nos muestra la descripcion de cada artista
+
+SELECT af.no_veces_interpretado, a.nombre_artista, a.paterno_artista, a.descripcion
+FROM afinidad af, artista a
+WHERE af.id_artista = a.id_artista;
+
+--Consulta de varias tablas que nos muestra la fecha, el nombre y direccion del teatro
+
+SELECT f.fecha_funcion, t.nombre_teatro, t.direccion
+FROM funcion f, teatro t
+WHERE f.id_teatro = t.id_teatro;
+
+--Consulta de varias tablas que nos muestra de forma ascendente la fecha de la funcion
+
+SELECT f.fecha_funcion, t.nombre_teatro, t.direccion, t.telefono
+FROM funcion f, teatro t
+WHERE f.id_teatro = t.id_teatro
+ORDER BY f.fecha_funcion;
+
+--Consulta de varias tablas que nos muestra de forma ascendente el aforo
+
+SELECT f.fecha_funcion, t.nombre_teatro, t.direccion, t.telefono, t.aforo
+FROM funcion f, teatro t
+WHERE f.id_teatro = t.id_teatro
+ORDER BY t.aforo;
+
+--Consulta de varias tablas que muestra de forma ascendente la fecha y que obra se presentara
+
+SELECT f.fecha_funcion, o.titulo
+FROM funcion f, obra o
+WHERE f.id_obra = o.id_obra
+ORDER BY f.fecha_funcion;

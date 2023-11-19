@@ -1,0 +1,244 @@
+--OBRA
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o001','Hamlet',1609,'au002');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o002','Macbeth',1602,'au002');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o003','Romeo y Julieta',1597,'au002');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o004','Harry Potter y el niño maldito',2016,'au001');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o005','Fantasma de la opera',1986,'au003');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o006','La Celestina',1709,'au006');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o007','El cuento de la criada',1999,'au002');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o008','Ulises',1922,'au002');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o009','Jane Eyre',1847,'au010');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o010','Viaje al oeste',1592,'au017');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o011','Guerra y Paz',1865,'au008');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o012','Fabulas de Esopo',1665,'au005');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o013','Cumbres Borrascosas',1847,'au012');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o014','El Proceso',1925,'au017');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o015','Al Faro',1927,'au007');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o016','Edipo Rey',1937,'au002');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o017','Aullido',1956,'au011');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o018','Los Miserables',1862,'au018');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o019','Pedro Paramo',1995,'au006');
+
+INSERT INTO obra (id_obra, titulo, anyo, id_autor) 
+VALUES ('o020','El Principito',1943,'au008');
+
+
+--PAPEL
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p001','Principe Hamlet',50,'at001','o001');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p002','Claudio',40,'at002','o001');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p003','Duncan',40,'at003','o002');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p004','Macbeth',60,'at004','o002');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p005','Romero',50,'at005','o003');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p006','Julieta',40,'at006','o003');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p007','Harry Potter',50,'at007','o004');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p008','Niño Maldito',40,'at008','o004');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p009','Fernado',40,'at009','o005');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p010','La carlota',40,'at010','o005');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p011','La Killer',30,'at011','o006');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p012','Erick',50,'at012','o006');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p013','Fernando',50,'at013','o007');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p014','Sulma',40,'at014','o007');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p015','Sima',40,'at015','o008');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p016','Matilde',45,'at016','o008');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p017','Fallon',50,'at017','o009');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p018','Sulima',40,'at018','o009');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p019','Princesa',30,'at019','o010');
+
+INSERT INTO papel (id_papel,nombre_papel,duracion,id_atrezo,id_obra)
+VALUES('p020','Alexis',45,'at020','o010');
+
+--AFINIDAD
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af001',1,'p001','a001');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af002',3,'p002','a002');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af003',4,'p003','a003');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af004',5,'p004','a004');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af005',8,'p005','a005');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af006',3,'p006','a006');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af007',5,'p007','a007');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af008',0,'p008','a008');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af009',2,'p009','a009');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af010',8,'p010','a010');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af011',6,'p011','a011');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af012',9,'p012','a012');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af013',10,'p013','a013');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af014',9,'p014','a014');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af015',3,'p015','a015');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af016',9,'p016','a016');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af017',2,'p017','a017');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af018',9,'p018','a018');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af019',9,'p019','a019');
+
+INSERT INTO afinidad (id_afinidad,no_veces_interpretado,id_papel,id_artista)
+VALUES ('af020',6,'p020','a020');
+
+--FUNCION
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f001','01-07-2021','t001','o001');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f002','01-08-2021','t002', 'o002');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f003','12-07-2021','t003','o003');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f004','23-07-2021','t004','o004');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f005','08-08-2021','t005','o005');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f006','04-07-2021','t006','o006');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f007','21-09-2021','t007','o007');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f008','06-11-2021','t008','o008');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f009','09-09-2021','t009','o009');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f010','12-09-2021','t010','o010');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f011','11-12-2021','t011','o011');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f012','07-09-2021','t012','o012');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f013','01-11-2021','t013','o013');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f014','01-07-2022','t014','o014');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f015','01-01-2022','t015','o015');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f016','02-01-2022','t016','o016');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f017','17-07-2022','t017','o017');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f018','01-04-2022','t018','o018');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f019','02-03-2022','t019','o019');
+
+INSERT INTO funcion (id_funcion, fecha_funcion, id_teatro, id_obra) 
+VALUES ('f020','01-03-2022','t020','o020');

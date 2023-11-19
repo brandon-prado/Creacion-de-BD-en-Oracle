@@ -1,0 +1,246 @@
+--TEATRO
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t001','Teatro de la ciudad Fernando Soler','Xicotencatl,Centro,25000','saltillo','Coahuila',1143,'Teatro','8444128267','1234df56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t002','Teatro de la Scala','Obregon,Centro,26000','saltillo','Coahuila',1142,'Teatro','8444941446','1234ab56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t003','Teatro Colon','Cerrito,628','Caba','Argentina',2487,'Teatro','8444122267','1234cd56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t004','Teatro San Carlos','Via San Carlo,98801','Napoles','Italia',1444,'Teatro','8444128233','1234ef56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t005','Teatro Macedonio','Independencia,68000','De juarez','Oaxaca',1636,'Teatro','8445122267','1234gh56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t006','Teatro San Francisco','San Francisco,42050','Pachuca','Hidalgo',1946,'Teatro','8444141555','1234ij56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t007','Teatro Matropolitan','Independencia,90909','Ciudad de Mexico','Mexico',3165,'Teatro','8444662267','1234kl56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t008','Teatro San Rafael','Virginia,06470','Cuahtecmoc','CDMX',1389,'Teatro','8444342406','1234mn56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t009','Teatro Blanquita','Independencia,68000','Guerrero','CDMX',2000,'Teatro','8445124264','1234op56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t010','Teatro Republica','Juarez,76008','Santiago De Queretaro','CDMX',1000,'Teatro','8445664244','1234qr56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t011','Teatro Principal','Centro,72000','Aclata','Puebla',1761,'Teatro','8445671244','1234st56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t012','Teatro Ulises','Mesones,37000','Coyoacan','CDMX',1200,'Teatro','8443671243','1234uv56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t013','Teatro Diana','Septiembre,44460','Guadalajara','Jalisco',2345,'Teatro','8449999999','1234wx56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t014','Teatro Fru Fru','Nogalera,72300','Aclata','Puebla',1500,'Teatro','8445444689','1224yz56');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t015','Teatro Rodriguez','Purcell,Centro,26000','saltillo','Coahuila',1300,'Teatro','8444843445','1233df55');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t016','Teatro Diana','Zaragoza,55460','Guadalajara','Jalisco',1000,'Teatro','8449999887','3334wx46');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t017','Teatro Diana','Lomalinda,55460','Guadalajara','Jalisco',1500,'Teatro','8447999887','5554wx46');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t018','Teatro Gonzalez','Fundadores,25115','saltillo','Coahuila',1200,'Teatro','8444121314','1234df22');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t019','Teatro Gomez','Farias,26113','Monterrey','Nuevo Leon',1250,'Teatro','8444181314','4321df22');
+
+INSERT INTO teatro(id_teatro,nombre_teatro,direccion,localidad,provincia,aforo,categoria,telefono,rfc_teatro)
+VALUES ('t020','Teatro Italia','Norte,20113','Monterrey','Nuevo Leon',1250,'Teatro','8441982020','4321df63');
+
+
+--ARTISTA
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a001','Robert John','Downey','Jr','Robert Downey Jr','03-01-1971',150000,'Actor, actor de voz, productor y cantante estadounidense');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a002','Adrian','Roman','Petriw','Adrian Petriw','03-05-1978',100000,'Actor, cine, ganadaor de premio LEO');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a003','Danny','Michael','Devito Jr','Danny Devito','04-01-1951',500000,'Humor destacado y muy punsante');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a004','Jimmy','Karz',NULL,'Jimmy Karz','03-01-1951',100000,'Actor de cine y television');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a005','Paul','Reubens',NULL,'Paul Reubens','03-12-1998',120000,'Comediante, actor, escritor y productor');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a006','Kira','Spencer','Hesser','Kira','03-01-1965',500000,'Modelo y actriz');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a007','Daniel','Radcliffe',NULL,'Daniel Radcliffe','03-01-1991',150000,'Actor britanico');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a008','Matwe Davis','Lewis',NULL,'Matwe Lewis','03-07-1947',50000,'Actor de cine estadounidense');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a009','Robbie','Coltrane',NULL,'Robbie Coltrane','03-12-1957',100000,'Actor britanico de cine y television');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a010','Maggie','Smith',NULL,'Maggie Smith','28-05-1988',100000,'Consagrada actriz de cine y television britanica');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a011','Claudia','Lozoya',NULL,'Lozoya','24-04-1971',400000,'actriz de cine y television');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a012','Diana','Garcia',NULL,'Garcia','03-08-1971',400000,'Gran mujer reconocida por su labor de actuar en la tele chica');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a013','Maximiliano','Meza',NULL,'Maxi','03-07-1950',500000,'Gran autor del cine estadounidense');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a014','Carlos','Rodriguez',NULL,'Carly','21-11-1989',100000,'Actor mexicano');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a015','Celso','Ortiz',NULL,'Celso','05-01-1995',600000,'Consagrado actriz de cine y television britanica');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a016','Hugo','Gonzales',NULL,'Hugo','03-01-1985',900000,'Actor del cine mexicano');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a017','Alejandria','Gonzales',NULL,'Alejandria','03-01-1952',900000,'Consagrada actriz');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a018','Nicol','Perez',NULL,'Nicky','05-01-1961',300000,'Consagrada actriz  britanica');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a019','Annia','Mejia',NULL,'Annia','03-01-1971',100000,'actriz de cine y television britanica');
+
+INSERT INTO artista (id_artista, nombre_artista, paterno_artista, materno_artista, nombre_artistico, nacimiento_artista, cache, descripcion) 
+VALUES ('a020','Vicente','Davila',NULL,'Chente','03-01-2000',100000,'Actor');
+
+
+--AUTOR
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au001','Joane','Rowling',NULL,'JK Rowling','12-09-1987',100000,50000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au002','William','Shakespeare',NULL,'William Shakespeare','23-08-1999',200000,60000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au003','Gaston','Learux',NULL,'Gaston learux','06-07-1997',30000,500000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au004','Gamura','Duneh',NULL,'Duneh','23-09-1987',20000,600000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au005','Cristal','lavelle',NULL,'Cristal','12-04-1985',50000,506000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au006','Samantha','Mewis',NULL,'Sam','24-08-1996',52390,600000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au007','Alexis','Carrington',NULL,'Alexis','09-04-1999',10000,200000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au008','Desiree','Monsivais',NULL,'Killer','15-06-1998',33000,560000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au009','Nicolas','Sanchez',NULL,'Nico','31-01-1998',80000,200000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au010','Rebeca','Bernal',NULL,'Bernal','17-11-1994',60000,220000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au011','Rogelio','Funesmori',NULL,'Rogelio','25-12-1997',33000,620000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au012','Mariana','Cadena',NULL,'Cadena','23-12-1985',40000,900000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au013','Cesar','Montes',NULL,'Cachorro','24-07-1999',28000,600000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au014','Diana','Evangelista',NULL,'Diana','16-08-1997',29000,609000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au015','Erik','Leija',NULL,'Erik','27-12-1998',20000,100000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au016','Fernando','Cortinas',NULL,'Fernando','12-12-1999',50000,200000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au017','Jesus','Gallardo',NULL,'Gallardo','03-05-1987',20000,600000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au018','Daniela','Solis',NULL,'Solis','26-06-1970',10000,900000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au019','Sebastian','Vegas',NULL,'Sebas','30-12-1987',20000,600000);
+
+INSERT INTO autor (id_autor,nombre_autor,paterno_autor,materno_autor,nombre_artistico_autor,nacimiento_autor,precio_libreto,precio_representacion)
+VALUES('au020','Monica','Flores',NULL,'Lucky','21-07-1999',10000,10000);
+
+
+--ATREZO
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at001','lampara',10);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at002', 'silla',5);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at003', 'mesa',3);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at004', 'vestido',4);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at005', 'pantalon',7);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at006', 'camisa',8);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at007', 'peluca',5);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at008', 'libreta',6);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad)  
+VALUES ('at009', 'paliz',13);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at010', 'mantel',3);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad)  
+VALUES ('at011', 'zapatos',15);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at012', 'escoba',4);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at013', 'trapiador',2);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at014', 'cuerda',2);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at015', 'bote de basura',2);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at016', 'libros',5);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at017', 'alfombra',2);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at018', 'platos',7);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at019', 'vazos',8);
+
+INSERT INTO atrezo (id_atrezo, nombre_atrezo, cantidad) 
+VALUES ('at020', 'disfraz',15);

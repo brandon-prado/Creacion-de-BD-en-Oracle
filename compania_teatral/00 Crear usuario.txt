@@ -1,0 +1,3 @@
+CONNECT system/admin
+CREATE USER compania_teatral IDENTIFIED BY compania_teatral;
+GRANT connect, resource TO compania_teatral;

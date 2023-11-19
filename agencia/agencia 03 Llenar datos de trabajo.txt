@@ -1,0 +1,186 @@
+--Tabla vehiculo
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v001','8946732894','HJL673','lexus','LS','2004','88765','S','carro','rojo',90000,'g001');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v002','09236024730','HJL30','mazda','AD','2002','88332','S','camioneta','verde',10000,'g002');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v003','8053812945','LAB30','toyota','G90','2000','82109','S','moto','amarillo',30000,'g003');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v004','8946202894','HJL613','lexus','LS','2005','88765','S','carro','morado',90000,'g004');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v005','0943678912','BDM75','toyota','AX','1990','06230','S','camioneta','azul',88000,'g005');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v006','8903456104','BVDSL','mixus','PKL5','2009','90356','S','moto','beige',11000,'g006');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v007','1326864804','XFE00','ximox','KL','2004','09451','S','camioneta','negro',18300,'g007');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v008','1734905782','AZX73','subaru','KH0','2005','78932','S','moto','anaranjado',20976,'g008');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v009','7234590869','VCN89','nitro','M8O','2000','93401','S','trailer','cafe',30000,'g009');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v010','4328904356','HJZ36','motorola','WZ','2010','45190','S','carro','rojo',10000,'g010');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v011','0934901234','XLO66','dodge','OL','2002','10943','S','camioneta','verde',10008,'g011');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v012','0858923105','QWE09','lesus','MN','2000','78203','S','carro','rojo',10000,'g012');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v013','1840256034','XWZ72','mitzu','ON3','2018','84037','S','convertible','azul',23456,'g013');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v014','0812356478','PLO63','toyota','TY6','2010','903561','S','carro','verde',90234,'g014');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v015','7890367456','ASD93','motorola','NJ','2008','09789','S','moto','verde',11111,'g015');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v016','0912309561','AXV63','mitzu','KN','2019','90467','N','camioneta','cafe',23104,'g016');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v017','7890256349','XIE90','marson','HJ','2002','09876','S','carro','azul',10000,'g017');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v018','5842154698','CXY90','mixu','PL','2009','09756','S','moto','azul',23890,'g018');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v019','5212548752','LOK13','toyota','OL','2004','90126','S','moto','rojo',10000,'g019');
+
+INSERT INTO vehiculo(id_vehiculo,no_serie_vehiculo,matricula_vehiculo,marca_vehiculo,modelo_vehiculo,modelo_anyo,foto_vehiculo,disponibilidad,tipo_vehiculo,color_vehiculo,precio_alquiler,id_garage)
+   	    VALUES ('v020','6542158962','XCB89','alison','UJ','2009','12084','S','camioneta','verde',19000,'g020');
+
+
+--Tabla especificacion
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e001','8001','v001');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e002','8002','v002');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e003','8003','v003');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e004','8004','v004');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e005','8005','v005');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e006','8006','v006');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e007','8007','v007');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e008','8008','v008');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e009','8009','v009');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e010','8010','v010');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e011','8011','v011');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e012','8012','v012');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e013','8013','v013');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e014','8014','v014');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e015','8015','v015');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e016','8016','v016');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e017','8017','v017');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e018','8018','v018');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e019','8019','v019');
+
+INSERT INTO especificacion_tecnica(id_especificacion,hoja_especificacion,id_vehiculo)
+   	    VALUES ('e020','8020','v020');
+
+
+--Tabla reservacion
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r001','S','N','12-01-2021','13-01-2021','18-01-2021','18-01-2021','v001','a001','c001');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r002','S','N','13-01-2021','13-01-2021','18-01-2021','18-01-2021','v002','a002','c002');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r003','S','N','13-01-2021','13-01-2021','18-01-2021','19-01-2021','v003','a003','c003');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r004','S','N','21-01-2021','21-01-2021','30-01-2021','31-01-2021','v006','a004','c004');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r005','S','N','01-02-2021','01-02-2021','04-02-2021','04-02-2021','v005','a005','c005');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r006','S','N','01-02-2021','01-02-2021','05-02-2021','05-02-2021','v006','a006','c006');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r007','S','N','02-02-2021','02-02-2021','09-02-2021','10-02-2021','v007','a007','c007');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r008','S','N','02-02-2021','02-02-2021','10-02-2021','11-02-2021','v008','a008','c008');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r009','S','N','03-02-2021','03-02-2021','11-02-2021','11-02-2021','v009','a009','c009');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r010','S','N','03-02-2021','03-02-2021','12-02-2021','12-02-2021','v010','a010','c010');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r011','S','N','03-02-2021','04-02-2021','20-02-2021','20-02-2021','v011','a011','c011');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r012','S','N','04-02-2021','04-02-2021','20-02-2021','21-02-2021','v012','a012','c012');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r013','S','N','05-02-2021','05-02-2021','09-02-2021','10-02-2021','v013','a013','c013');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r014','S','N','05-02-2021','05-02-2021','09-02-2021','09-02-2021','v014','a014','c014');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r015','S','N','06-02-2021','06-02-2021','27-02-2021','27-02-2021','v015','a015','c015');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r016','S','N','06-02-2021','06-02-2021','20-02-2021','21-02-2021','v016','a016','c016');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r017','S','N','07-02-2021','08-02-2021','20-02-2021','20-02-2021','v017','a017','c017');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r018','S','N','07-02-2020','09-02-2021','15-02-2020','20-02-2020','v018','a018','c018');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r019','S','N','08-02-2020','08-02-2021','20-02-2020','25-02-2020','v019','a019','c019');
+
+INSERT INTO reservacion(id_reservacion,tiene_reservacion,cancelacion_reservacion,fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin, id_vehiculo,id_agencia,id_cliente)
+   	    VALUES ('r020','S','N','10-02-2021','10-02-2021','20-02-2021','21-02-2021','v020','a020','c020');

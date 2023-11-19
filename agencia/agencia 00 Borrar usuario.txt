@@ -1,0 +1,8 @@
+--Borrar usuario de agencia de autos
+--Conectar como DBA
+
+CONNECT system/admin
+
+--Borrar usuario y en caso que ya tenga datos creados usar la palabra CASCADE
+
+DROP USER agencia CASCADE;

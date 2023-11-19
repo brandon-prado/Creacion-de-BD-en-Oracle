@@ -1,0 +1,78 @@
+--Consulta de varios grupos de la tabla artista donde se saca el promedio, el maximo y minimo del cache,  y la suma de todos los caches
+
+SELECT AVG(cache), MAX(cache),
+       MIN(cache), SUM(cache)
+FROM artista;
+
+--Consulta de grupo simple que nos muestra la precio del alquiler promedio de los diferentes vehiculos
+
+SELECT AVG(cache)
+FROM artista;
+
+--Consulta de grupo simple que nos muestra el cache promedio de los diferentes artista que su nombre empiece con "Ro"
+
+SELECT AVG(cache)
+FROM artista
+WHERE nombre_artista LIKE 'Ro%';
+
+--Consulta de grupo simple que nos muestra a los diferentes artista que su nombre empiece con "Ro" y su respectivo cache
+
+SELECT nombre_artista, cache
+FROM artista
+WHERE nombre_artista LIKE 'Ro%'
+GROUP BY nombre_artista, cache;
+
+--Consulta de grupo que muestra la cantidad de artistas registrado con letra inicial D
+
+SELECT COUNT(*)"Cant de artist registr con D"
+FROM artista
+WHERE nombre_artista LIKE 'D%';
+
+--Consulta de grupo simple que nos muestra la cantidad maxima de cache de todos los artistas registrados
+
+SELECT MAX(cache)"Precio maximo", SUM(cache) "Cantidad total"
+FROM artista;
+
+--Consulta de grupo que muestra la fecha mas antigua de nacimeinto de un artista
+
+SELECT MIN(nacimiento_artista)
+FROM artista;
+
+--Consulta de grupo que muestra la fecha mas reciente de nacimeinto de un artista
+
+SELECT MAX(nacimiento_artista)
+FROM artista;
+
+--Consulta de grupo que nos muestra el promedio de costo de los libretos
+
+SELECT AVG(precio_libreto)"Promedio de costo libreto"
+FROM autor;
+
+--Consulta de grupo que nos muestra el promedio de costo de las representaciones
+
+SELECT AVG(precio_representacion)"Promedio de costo represent"
+FROM autor;
+
+--Consulta de grupos que nos muestra el maximo de libreto y representacion
+
+SELECT MAX(precio_libreto)"Maximo de libreto", MAX(precio_representacion)"Maximo de represen"
+FROM autor;
+
+--Consulta de grupos que nos muestra el minimo de libreto y representacion
+
+SELECT MIN(precio_libreto)"Minimo de libreto", MIN(precio_representacion)"Minimo de represen"
+FROM autor;
+
+--Consulta de grupos que nos muestra la cantidad minima de atrezo
+
+SELECT nombre_atrezo, MIN(cantidad)
+FROM atrezo
+GROUP BY nombre_atrezo;
+
+--Consulta de grupos que nos muestra en anyo mas antiguo que se ha creado una obra
+SELECT MIN(anyo)
+FROM obra;
+
+--Consulta de grupos que nos muestra en anyo mas reciente que se ha creado una obra
+SELECT MAX(anyo)
+FROM obra;

@@ -1,0 +1,84 @@
+--Consulta de la tabla agencia que nos muestra algunos atributos de esta tabla
+
+SELECT nombre_agencia, direccion_agencia, telefono_agencia, rfc_agencia
+FROM agencia;
+
+--Consulta de la tabla agencia para mostrar las sucursales de Coahuila
+
+SELECT nombre_agencia, ciudad_agencia, estado_agencia
+FROM agencia
+WHERE LOWER(estado_agencia) = 'coahuila';
+
+--Consulta que nos muestre los estados que tiene presencia la agencia
+
+SELECT DISTINCT estado_agencia
+FROM agencia;
+
+--Consulta de la tabla agencia que mostrara los correos y telefonos con la lada de Saltillo
+
+SELECT nombre_agencia, correo_agencia, telefono_agencia
+FROM agencia
+WHERE telefono_agencia LIKE '844%';
+
+--Consulta de la tabla cliente que nos muestra todos los atributos de la misma
+
+SELECT 	*
+FROM 	cliente;
+
+--Consulta que emplea el uso de de cadenas de caracteres
+
+SELECT nombre_cliente ||' vive en el domicilio: '|| domicilio_cliente
+FROM cliente;
+
+--Consulta de la tabla clientes que nos muestra los clientes con nombre Juan para fines de publicidad
+
+SELECT nombre_cliente, correo_cliente, telefono_cliente
+FROM cliente
+WHERE nombre_cliente = 'Juan';
+
+--Se esta usando el operador suma para calcular un incremento para todos los vehiculos y se visualisa una columna nueva, precio_alquiler_vehiculo + 100
+--el tiene un alias parar no mostrar la formula
+SELECT 	matricula_vehiculo, marca_vehiculo, tipo_vehiculo, precio_alquiler, precio_alquiler+100.0 "AUMENTO DE COSTO"
+FROM vehiculo;
+
+--Consulta en donde se muestra a los clientes los cuales su nombre inicia con la letra B de la tabla cliente
+
+SELECT id_cliente, nombre_cliente, telefono_cliente
+FROM cliente 
+WHERE nombre_cliente LIKE 'B%';
+
+--Consulta en donde se muestra los telefonos con lada de la ciudad de Saltillo (844) de la tabla cliente
+
+SELECT id_cliente, nombre_cliente, telefono_cliente
+FROM cliente
+WHERE telefono_cliente LIKE '844%';
+
+--Consulta de la tabla garage en la cual se le quitan cinco lugares de capacidad
+
+SELECT id_garage, nombre_garage, capacidad_garage, capacidad_garage-5 "nueva_capacidad"
+FROM garage;
+
+--Consulta de la tabla garage que nos muestra el nombre y la direccion cuando su capacidad es mayor o igual a 50
+
+SELECT id_garage, nombre_garage, capacidad_garage
+FROM garage
+WHERE capacidad_garage >= 50;
+
+--Consulta de la tabla garage que nos muestra el id, nombre y direccion cuando sean de tipo carro
+
+SELECT id_garage, nombre_garage, direccion_garage, tipo_garage
+FROM garage
+WHERE LOWER(tipo_garage) = 'carro';
+
+
+--Consulta de la tabla vehiculo donde se la matricula que inician con m
+
+SELECT no_serie_vehiculo, marca_vehiculo, matricula_vehiculo
+FROM vehiculo
+WHERE matricula_vehiculo LIKE 'HJ%';
+
+--Consulta de la tabla reservacion que nos muestra las fechas en forma ascendente
+
+SELECT id_reservacion, id_vehiculo, id_agencia, id_cliente, fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin
+FROM reservacion
+ORDER BY fecha_inicial_reserv, fecha_prog_real_inicio, fecha_fin_reservacion, fecha_prog_real_fin;

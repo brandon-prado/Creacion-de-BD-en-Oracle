@@ -1,0 +1,3 @@
+CONNECT system/admin
+CREATE USER agencia IDENTIFIED BY agencia;
+GRANT connect, resource TO agencia;

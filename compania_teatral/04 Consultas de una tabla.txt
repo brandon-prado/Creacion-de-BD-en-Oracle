@@ -1,0 +1,80 @@
+--Consulta de la tabla  funciones  que nos muestra algunos atributos de esta tabla
+
+SELECT id_funcion, fecha_funcion,id_teatro
+FROM funcion;
+
+--Consulta de la tabla teatro  para mostrar teatros en Coahulia
+
+SELECT nombre_teatro, localidad, provincia
+FROM teatro
+WHERE LOWER(provincia)='coahuila';
+
+--Coaulta que nos muetra el nombre y el precio libreto del autor
+
+SELECT nombre_autor, precio_libreto
+FROM autor;
+
+--Consulta de la tabla Artistas que mostrara el nombre artistico  y cache sea a 100000
+
+SELECT nombre_artistico, cache
+FROM artista
+WHERE cache LIKE '1000%';
+
+--Consulta de la tabla Afinidad que nos muestra todos los atributos de la misma
+
+SELECT *
+FROM funcion;
+
+--Consulta que emplea el uso de de cadenas de caracteres
+
+SELECT duracion ||' minutos es el tiempo que participa el personaje: '|| nombre_papel
+FROM papel;
+
+--Consulta de la tabla  papel que nos da la obra ,el nombre del papel que tienen de duracion 40 min
+
+SELECT id_obra,nombre_papel,duracion
+FROM papel
+WHERE duracion = '40';
+
+--Consulta de la tabla afinidad que nos muestre todos sus atributos 
+SELECT  *
+FROM teatro;
+
+--Consulta en donde se muestra a los autores los cuales su nombre inicia con la letra G de la tabla autor
+
+SELECT id_autor, nombre_autor
+FROM autor 
+WHERE nombre_autor LIKE 'G%';
+
+--Consulta en donde se muestra los telefonos con lada de la ciudad de Saltillo (844) de la tabla teatro
+
+SELECT id_teatro, nombre_teatro, telefono
+FROM teatro
+WHERE telefono LIKE '844%';
+
+--Consulta de la tabla obra en la que nos muestra todos sus atributos
+
+SELECT  *
+FROM obra;
+
+--Consulta de la tabla artista  que nos muestra el nombre y apellido cuando su cache es mayor a 100000
+
+SELECT nombre_artista , paterno_artista , cache
+FROM artista
+WHERE cache >= 100000;
+
+--Consulta que emplea el uso de de cadenas de caracteres
+
+SELECT nombre_teatro ||' cuenta con un aforo de: '|| aforo
+FROM teatro;
+
+--Consulta que nos muestra el titulo de las obras que tienen un año de cracion mayor a  1950
+
+SELECT titulo,anyo
+FROM obra
+WHERE anyo >= 1950;
+
+--Consulta de la tabla artista en la que nos muestra todos sus atributos
+
+SELECT  *
+FROM artista;

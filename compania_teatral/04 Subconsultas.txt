@@ -1,0 +1,125 @@
+--Subconsulta de la tabla de teatro que nos muestra todos los teatros con aforo mayor a el teatro t001
+
+ SELECT id_teatro,nombre_teatro,direccion,categoria
+FROM teatro
+WHERE aforo > (SELECT aforo
+               FROM teatro
+               WHERE id_teatro ='t001');
+
+--subconsulta de la tabla teatro que nos muestra un filtro de aquellos teatros que son de localidad De Juarez y su numero telefonico empieza con lada 844
+
+SELECT id_teatro,nombre_teatro,localidad,provincia
+FROM teatro
+WHERE localidad = (SELECT localidad
+                   FROM teatro
+                   WHERE id_teatro = 't005')
+AND telefono LIKE '844%';
+
+--subconsulta de la tabla de teatro que nos muestra aquellos teatros con un aforo minimo
+
+SELECT id_teatro,nombre_teatro,telefono,aforo
+FROM teatro
+WHERE aforo = (SELECT MIN(aforo)
+                         FROM teatro);
+
+---Subconsulta de la tabla agencia todos aquellos teatros con aforo maximo
+
+SELECT id_teatro,nombre_teatro,provincia,localidad,aforo
+FROM teatro
+WHERE aforo = (SELECT MAX(aforo)
+                          FROM teatro);
+
+---Subconsulta de la tabla artista que nos muestra todos los artistas que tienen un cache igual a 100000
+
+SELECT nombre_artista,paterno_artista,cache
+FROM artista
+WHERE cache =(SELECT cache
+                     FROM artista
+                     WHERE id_artista ='a004');
+
+--Sunconsulta que nos muestra el afono mayor al 1142 perteneciente del teatro t002 de ascendente
+
+SELECT nombre_teatro, localidad, provincia, aforo
+FROM teatro
+WHERE aforo > (SELECT aforo
+	       FROM teatro
+	       WHERE id_teatro = 't002')
+ORDER BY aforo;
+
+--Subconsulta que nos muestra los teatros con provincia de Coahuila
+
+SELECT nombre_teatro, localidad, provincia, aforo
+FROM teatro
+WHERE provincia = (SELECT provincia
+	       FROM teatro
+	       WHERE id_teatro = 't002');
+
+--Subconsulta que nos muestra las sucursales en Saltillo
+
+SELECT nombre_teatro, localidad, direccion, telefono
+FROM teatro
+WHERE localidad = (SELECT localidad
+			   FROM teatro
+			   WHERE id_teatro = 't002');
+
+--Subconsulta de la tabla teatro que nos muestra las sucursales de Coahuila y que su telefono termine en 7 
+
+SELECT nombre_teatro, telefono, rfc_teatro
+FROM teatro
+WHERE provincia = (SELECT provincia
+			   FROM teatro
+			   WHERE id_teatro = 't001')
+AND telefono LIKE '_________7%';
+
+--Subconsulta de la tabla teatro que nos muestra el nombre y telefono de las sucursales de Coahuila que empieza con la letra d
+
+SELECT nombre_teatro, telefono
+FROM teatro
+WHERE provincia = (SELECT provincia
+			   FROM teatro
+			   WHERE id_teatro = 't001')
+AND nombre_teatro LIKE 'Teatro d%';
+
+--Subconsulta que muestra a los autores con los precios de libreto mayores a 100,000 
+
+SELECT nombre_artistico_autor, nacimiento_autor, precio_libreto
+FROM autor
+WHERE precio_libreto > (SELECT precio_libreto
+			FROM autor
+			WHERE id_autor = 'au001');
+
+--Subconsulta que muestra a los autores con los precios de representacion menores a 600,000 
+
+SELECT nombre_artistico_autor, nacimiento_autor, precio_representacion
+FROM autor
+WHERE precio_representacion < (SELECT precio_representacion
+			FROM autor
+			WHERE id_autor = 'au004')
+ORDER BY precio_representacion;
+
+--Subconsulta que muestra las obras con año superior a 1609 y son ordenadas de forma ascendente
+
+SELECT titulo, anyo
+FROM obra
+WHERE anyo > (SELECT anyo
+	      FROM obra
+	      WHERE id_obra = 'o001')
+ORDER BY anyo;
+
+--Subconsulta que nos muestra aquellos papeles de obra que tengan una duracion mayor o igual 40 minutos
+
+SELECT nombre_papel, duracion
+FROM papel
+WHERE duracion >= (SELECT duracion
+		   FROM papel
+		   WHERE id_papel = 'p002')
+ORDER BY duracion;
+
+--Subconsulta que muestra las funciones con fecha mayor del 12 julio del 2021
+
+SELECT id_funcion, fecha_funcion
+FROM funcion
+WHERE fecha_funcion > (SELECT fecha_funcion
+			FROM funcion
+			WHERE id_funcion = 'f003')
+ORDER BY fecha_funcion;

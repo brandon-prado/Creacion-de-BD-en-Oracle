@@ -1,0 +1,30 @@
+--Borrar tablas de agencia de autos
+
+CONNECT agencia/agencia
+
+DROP TABLE reservacion;
+
+DROP TABLE especificacion_tecnica;
+
+DROP TABLE vehiculo;
+
+DROP TABLE garage;
+
+DROP TABLE cliente;
+
+DROP TABLE agencia;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
